@@ -9,6 +9,12 @@ public class Funcionario {
     private String cpf;
     private Double salarioBruto;
 
+    public Funcionario(String nome, String cpf, Double salarioBruto) {
+        this.nome = nome;
+        this.cpf = cpf;
+        this.salarioBruto = salarioBruto;
+    }
+
     public Funcionario(String nome, String cpf) {
         this.nome = nome;
         this.cpf = cpf;
