@@ -2,13 +2,7 @@ package aula08.exercicios;
 
 public class Tabela {
 
-    private Double valor;
-
-    public Tabela(Double valor) {
-        this.valor = valor;
-    }
-
-    public Double IRRF() {
+    public Double IRRF(Double valor) {
 
         if (valor <= 1903.98) {
             return 0.00;
@@ -29,7 +23,7 @@ public class Tabela {
         return valor * 0.275;
     }
 
-    public Double INSS() {
+    public Double INSS(Double valor) {
 
         if (valor <= 1100.00) {
             return valor * 0.075;
@@ -44,13 +38,5 @@ public class Tabela {
         }
 
         return valor * 0.14;
-    }
-
-    public Double getValor() {
-        return valor;
-    }
-
-    public void setValor(Double valor) {
-        this.valor = valor;
     }
 }

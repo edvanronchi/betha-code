@@ -2,6 +2,10 @@ package aula08.exercicios;
 
 public class Analista extends Funcionario{
 
+    public Analista(String nome, String cpf, Double salarioBruto) {
+        super(nome, cpf, salarioBruto);
+    }
+
     public Analista(String nome, String cpf) {
         super(nome, cpf);
     }
@@ -12,6 +16,6 @@ public class Analista extends Funcionario{
 
     @Override
     public Double getSalarioBruto() {
-        return super.getSalarioBruto() + (super.getSalarioBruto() * 0.1);
+        return super.getSalarioBruto() * 1.1;
     }
 }

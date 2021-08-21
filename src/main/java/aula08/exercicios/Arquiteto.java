@@ -2,6 +2,10 @@ package aula08.exercicios;
 
 public class Arquiteto extends Funcionario{
 
+    public Arquiteto(String nome, String cpf, Double salarioBruto) {
+        super(nome, cpf, salarioBruto);
+    }
+
     public Arquiteto(String nome, String cpf) {
         super(nome, cpf);
     }
@@ -12,6 +16,6 @@ public class Arquiteto extends Funcionario{
 
     @Override
     public Double getSalarioBruto() {
-        return super.getSalarioBruto() + (super.getSalarioBruto() * 0.15);
+        return super.getSalarioBruto() * 1.15;
     }
 }
